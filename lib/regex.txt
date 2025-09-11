@@ -1,0 +1,54 @@
+# System log
+EMERGENCY Out of memory. System halted to prevent data loss.
+ALERT Multiple failed login attempts detected for user fedora from from IP 10.0.0.5.
+ALERT Firewall rules modified by user unknown from IP 10.0.0.5.
+CRITICAL Configuration file /etc/ssh/sshd_config modified by user unknown from IP 10.0.0.5.
+ERROR DNS resolution failed for host example.com.
+WARNING port scan detected from IP 192.168.1.100 targeting ports 22, 80, 443.
+WARNING Authentication failed for user fedora from 203.0.113.45 (attempt 4 of 10).
+WARNING Authentication failed for user fedora from 203.0.113.45 (attempt 5 of 10).
+NOTICE New SSH key added for user deploy.
+INFO Total download size: 618 M
+INFO Key imported successfully
+INFO Access granted: user01 connected from 192.168.111.11.
+INFO Access granted: user02 connected from 192.168.111.12.
+INFO Access granted: user03 connected from 192.168.111.13.
+INFO Access granted: user101 connected from 192.168.111.101.
+INFO Access granted: user102 connected from 192.168.111.102.
+INFO Access granted: user103 connected from 192.168.111.103.
+DEBUG Token validation failed for session ID abc123.
+DEBUG baseos: has expired and will be refreshed.
+DEBUG Making cache files for all metadata files.
+DEBUG baseos: has expired and will be refreshed.
+DEBUG appstream: has expired and will be refreshed.
+DEBUG extras: has expired and will be refreshed.
+
+# Access log
+127.0.0.1 - - [29/Aug/2025:21:11:42 +0900] "GET /index.html HTTP/1.1" 200 212
+127.0.0.1 - - [29/Aug/2025:21:12:11 +0900] "GET /login.html HTTP/1.1" 200 208
+127.0.0.1 - - [29/Aug/2025:21:12:17 +0900] "GET /about.html HTTP/1.1" 200 -
+127.0.0.1 - - [29/Aug/2025:21:12:28 +0900] "GET /dashboard.html HTTP/1.1" 200 216
+127.0.0.1 - - [29/Aug/2025:21:12:51 +0900] "GET /contact.html HTTP/1.1" 200 212
+192.168.111.20 - - [29/Aug/2025:23:35:03 +0900] "GET /index.html HTTP/1.1" 200 212
+192.168.111.20 - - [29/Aug/2025:23:35:12 +0900] "GET /login.html HTTP/1.1" 200 208
+192.168.111.20 - - [29/Aug/2025:23:35:18 +0900] "GET /about.html HTTP/1.1" 200 -
+192.168.111.20 - - [29/Aug/2025:23:35:25 +0900] "GET /dashboard.html HTTP/1.1" 200 216
+192.168.111.20 - - [29/Aug/2025:23:38:46 +0900] "GET /contact.html HTTP/1.1" 200 212
+192.168.111.20 - - [29/Aug/2025:23:37:12 +0900] "GET /not-found.html HTTP/1.1" 404 196
+192.168.111.30 - - [29/Aug/2025:23:35:03 +0900] "GET /index.html HTTP/1.1" 200 212
+192.168.111.30 - - [29/Aug/2025:23:35:12 +0900] "GET /login.html HTTP/1.1" 200 208
+192.168.111.30 - - [29/Aug/2025:23:35:18 +0900] "GET /about.html HTTP/1.1" 200 -
+192.168.111.30 - - [29/Aug/2025:23:35:25 +0900] "GET /dashboard.html HTTP/1.1" 200 216
+192.168.111.30 - - [29/Aug/2025:23:38:46 +0900] "GET /contact.html HTTP/1.1" 200 212
+192.168.111.30 - - [29/Aug/2025:23:37:12 +0900] "GET /not-found.html HTTP/1.1" 404 196
+
+# rocky.repo
+[baseos]
+name=Rocky Linux $releasever - BaseOS
+mirrorlist=https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-10
+#baseurl=http://dl.rockylinux.org/pub/rocky/10.0/BaseOS/x86_64/os/
+gpgcheck=1
+enabled=1
+countme=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-10

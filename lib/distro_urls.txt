@@ -1,0 +1,18 @@
+Kubuntu - https://kubuntu.org
+Lubuntu - https://lubuntu.me
+Xubuntu - https://xubuntu.org
+
+Fedora - https://fedoraproject.org
+CentOS - https://www.centos.org
+Red Hat - https://www.redhat.com
+AlmaLinux - https://almalinux.org
+Rocky - https://rockylinux.org
+
+GhostBSD - https://www.ghostbsd.org
+FreeBSD - https://www.freebsd.org
+OpenBSD - https://www.openbsd.org
+
+Mint - https://www.linuxmint.com
+Peppermint - https://peppermintos.com
+
+Q4OS - https://www.q4os.org

@@ -1,0 +1,32 @@
+# System log
+
+WARNING port scan detected from IP 192.168.1.100 targeting ports 22, 80, 443.
+WARNING Authentication failed for user fedora from 203.0.113.10 (attempt 4 of 10).
+WARNING Authentication failed for user fedora from 203.0.113.10 (attempt 5 of 10).
+
+WARNING Access refused: user_1 from 192.168.111.10.
+WARNING Access refused: user_12 from 192.168.111.20.
+WARNING Access refused: user_123 from 192.168.111.30.
+
+NOTICE New SSH key added for user deploy.
+
+INFO FileManager - Created log file: my.log
+INFO FileManager - Created log file: my.log_7days_ago
+INFO FileManager - Created log file: my.log_14days_ago
+INFO FileManager - Created log file: my.log_30days_ago
+
+
+# Access log
+
+192.168.111.20 - - [29/Aug/2025:23:35:03 +0900] "GET /index.html HTTP/1.1" 200 212
+192.168.111.20 - - [29/Aug/2025:23:35:12 +0900] "GET /login.html HTTP/1.1" 200 208
+192.168.111.20 - - [29/Aug/2025:23:35:18 +0900] "GET /about.html HTTP/1.1" 200 -
+192.168.111.20 - - [29/Aug/2025:23:35:25 +0900] "GET /dashboard.html HTTP/1.1" 200 216
+192.168.111.20 - - [29/Aug/2025:23:38:46 +0900] "GET /contact.html HTTP/1.1" 200 212
+192.168.111.20 - - [29/Aug/2025:23:37:12 +0900] "GET /not-found.html HTTP/1.1" 404 196
+
+192.168.111.11 - - [30/Aug/2025:11:00:10 +0900] "GET / HTTP/1.1" 301 198 "-" "http://www.example.org"
+192.168.111.12 - - [30/Aug/2025:11:00:10 +0900] "GET / HTTP/1.1" 301 198 "-" "https://www.example.net"
+192.168.111.13 - - [30/Aug/2025:11:00:10 +0900] "GET / HTTP/1.1" 301 198 "-" "http://www.example.com"
+
+192.168.111.15 - - [30/Aug/2025:11:00:11 +0900] "GET / HTTP/1.1" 200 200 "https://www.example.com"

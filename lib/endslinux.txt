@@ -1,0 +1,8 @@
+1       AlmaLinux           SparkyLinux
+2       BigLinux            4MLinux
+3       MakuluLinux         SpiralLinux
+4       LastOSLinux         GoboLinux
+5       XeroLinux           TeaLinux
+6       UBLinux             MandrakeLinux
+7       FuguitaLinux        PlamoLinux
+8       EuroLinux           AlmaLinux
